@@ -99,7 +99,6 @@ function generate_item_element(item) {
       <div class="shopping-item-controls">
       <p> ${item.name} </p>
           <button class="shopping-item-toggle js-item-toggle"><span class="button-label"><a href="https://${item.name}"> Join</span></button>
-          <button class="shopping-item-delete js-item-delete"><span class="button-label" >Delete</span> <a href="${item.name}"> <a></button>
       </div>
   </li>`;
 }
