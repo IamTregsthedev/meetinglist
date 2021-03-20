@@ -1,6 +1,10 @@
 let CHECKLIST = [
     
     
+      
+  { name: "Arav", checked: false },
+  { name: "Is", checked: true },
+  { name: "Nice", checked: false }
   
     
 ];
