@@ -90,7 +90,7 @@ console.log("Deleting item")
     console.log('Items not deleted')
     alert("Items will not be delted")
 }
-  
+}
 
 function handle_shopping_list() {
   init_list();
