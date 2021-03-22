@@ -80,17 +80,6 @@ function handle_add_item() {
 
 function handle_check_item() { }
 
-function handle_delete_item() { 
-console.log("Deleting item")
-  var conifrm = prompt("are you sure you want to delte all items?")
-  if (conifrm = "yes") {
-    localstorage.clear()
-  }
-  else {
-    console.log('Items not deleted')
-    alert("Items will not be delted")
-}
-}
 
 function handle_shopping_list() {
   init_list();
