@@ -20,9 +20,7 @@ function init_list() {
 }
 
 function render_list() {
-   return `
- <div class="shopping-item-controls">
-      <p> test</p>`
+  
   console.log(" `render_list` ran");
   const shopping_list_string = generate_list_string();
   $(".js-shopping-list").html(shopping_list_string);
