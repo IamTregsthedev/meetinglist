@@ -5,7 +5,10 @@
       href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
- 
+   <script
+    src="https://unpkg.com/cotter@0.3.32/dist/cotter.min.js"
+    type="text/javascript"
+  ></script>
     <meta name="description" content="Keep track of Your Meeting links in your Browser without an Account">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="twitter:description" content="The simplest way to keep track of any meetings, without an account"/>
@@ -20,7 +23,7 @@
   </head>
 
   <body>  
-  </body>
+  </body><div id="cotter-form-container-form_default" style="width: 300px; height: 300px;"></div>
     <div class="container">
       <h1>MY Meeting Links</h1>
       <form id="js-shopping-list-form">
@@ -36,7 +39,19 @@
       </form>
       <ul class="shopping-list js-shopping-list"></ul>  <!-- include the widget -->
   <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-</head>
+<script>
+  var cotter = new Cotter({ApiKeyID: "a08f5157-1fbb-4c28-90dc-ffec9247f083", ContainerID: "cotter-form-container-form_default"}); // 👈 Specify your API KEY ID
+  cotter
+    .withFormID("form_default") // Use customization for form "form_default"
+    .signInWithLink() // Sign In with Magic Link
+    .showPhoneForm() // Send Magic Link via Phone Number
+    .then(() => {   
+      window.location.href = "/protected"; // redirect to the protected page
+    })
+    .catch(err => {
+      console.log(err) // handle error
+    });
+</script>
 <body>
   <!-- Add a menu:
    Log in / Sign up - when the user is not logged in
