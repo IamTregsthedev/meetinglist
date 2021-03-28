@@ -98,7 +98,7 @@ function generate_item_element(item) {
       <a class="shopping-item js-shopping-item href="${item.checked}?"  shopping-item__checked" : ''}">${firstName}</span>
       <div class="shopping-item-controls">
       <p> ${item.name} </p>
-          <button class="shopping-item-toggle js-item-toggle"><span class="button-label"><a href="https://${item.name}"> Join</span></button>
+          <button class="shopping-item-toggle js-item-toggle"><span class="button-label"><a href="${item.name}"> Join</span></button>
       </div>
   </li>`;
 }
