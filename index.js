@@ -11,9 +11,9 @@ function init_list() {
   let checklist = getItem('checklist')
   if (!checklist || checklist.length === 0) {
     checklist = [
-      { name: "", checked: false },
-      { name: "", checked: true },
-      { name: "", checked: false }
+      { name: "meet.google.com/jzt-hsad-hqu?pli=1&authuser=1", checked: false },
+      { name: "meet.google.com/jzt-hsad-hqu?pli=1&authuser=1", checked: true },
+      { name: "meet.new", checked: false }
     ]
   }
   setItem('checklist', checklist)
