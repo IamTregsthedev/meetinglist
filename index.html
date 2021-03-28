@@ -39,19 +39,7 @@
       </form>
       <ul class="shopping-list js-shopping-list"></ul>  <!-- include the widget -->
   <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  var cotter = new Cotter({ApiKeyID: "a08f5157-1fbb-4c28-90dc-ffec9247f083", ContainerID: "cotter-form-container-form_default"}); // 👈 Specify your API KEY ID
-  cotter
-    .withFormID("form_default") // Use customization for form "form_default"
-    .signInWithLink() // Sign In with Magic Link
-    .showPhoneForm() // Send Magic Link via Phone Number
-    .then(() => {   
-      window.location.href = "/protected"; // redirect to the protected page
-    })
-    .catch(err => {
-      console.log(err) // handle error
-    });
-</script>
+
 <body>
   <!-- Add a menu:
    Log in / Sign up - when the user is not logged in
